@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="co.example.ui.supportService.SupportServiceActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <!--<include layout="@layout/item_flag" />-->
+
+    <LinearLayout
+        android:id="@+id/llContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/progress_bar" />
+
+        <include layout="@layout/no_data" />
+
+        <include layout="@layout/no_network" />
+
+        <include layout="@layout/server_error" />
+    </LinearLayout>
+</LinearLayout>

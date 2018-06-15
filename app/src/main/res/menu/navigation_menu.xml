@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/section_one"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/activate_discount_card"
+            android:icon="@drawable/ic_activate_discount"
+            android:title="@string/activate_discount_card" />
+    </group>
+
+    <group
+        android:id="@+id/section_two"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/sign_in"
+            android:icon="@drawable/ic_sign_in"
+            android:title="@string/login_to_your_account" />
+    </group>
+
+    <group
+        android:id="@+id/section_three"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/how_to_use"
+            android:icon="@drawable/ic_how_to_use"
+            android:title="@string/how_to_use" />
+    </group>
+
+    <group
+        android:id="@+id/section_four"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/tourist_information_card"
+            android:icon="@drawable/ic_tourist_information_card"
+            android:title="@string/tourist_information_card" />
+    </group>
+
+    <group
+        android:id="@+id/section_five"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/insurance"
+            android:icon="@drawable/ic_insurance"
+            android:title="@string/insurance" />
+    </group>
+
+    <group
+        android:id="@+id/section_six"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/mobile_connection"
+            android:icon="@drawable/ic_mobile_connection"
+            android:title="@string/mobile_connection" />
+    </group>
+
+    <group
+        android:id="@+id/section_seven"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/public_offer"
+            android:icon="@drawable/ic_public_offer"
+            android:title="@string/public_offer" />
+    </group>
+
+    <group
+        android:id="@+id/section_eight"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/about_service"
+            android:icon="@drawable/ic_about_service"
+            android:title="@string/about_service" />
+    </group>
+
+    <group
+        android:id="@+id/section_nine"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/settings" />
+    </group>
+</menu>

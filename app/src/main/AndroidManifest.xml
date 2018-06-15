@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="co.example">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".ui.homePage.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.splashScreen.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.historicalPlaces.HistoricalPlacesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.aboutUzbekistan.AboutUzbekistanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.old.whatToEat.WhatToEatActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.old.whatToSee.WhatToSeeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.old.whereToGo.WhereToGoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.old.whatToBuy.WhatToBuyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.old.helpfulInformation.HelpfulInformationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.currencyExchange.CurrencyExchangeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.supportService.SupportServiceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.old.bookRoom.BookRoomActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.discount.DiscountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.weather.WeatherActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.map.MapActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.signIn.SignInActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.signUp.SignUpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.regionDescription.RegionDescriptionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.restorePassword.RestorePasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.aboutService.AboutServiceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.publicOffer.PublicOfferActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.howToUse.HowToUseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.insurance.InsuranceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activateDiscountCard.ActivateDiscountCardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.touristInformationCard.TouristInformationCardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.companyList.CompanyListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.companyDescription.CompanyDescriptionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.search.SearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.sightDescription.SightDescriptionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.settings.SettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.languages.LanguagesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.category.CategoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.favorite.FavoriteActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.navigation.NavigationActivity"></activity>
+    </application>
+
+</manifest>

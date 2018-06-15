@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="co.example.ui.signIn.SignInActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:id="@+id/llContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/progress_bar" />
+
+        <include layout="@layout/no_data" />
+
+        <include layout="@layout/no_network" />
+
+        <include layout="@layout/server_error" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/etLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/login"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:nextFocusDown="@id/etPassword"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/password"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnSignIn"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_margin="16dp"
+                android:background="@drawable/background_button"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="@string/sign_in"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/btnSignUp"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:background="@drawable/background_button"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="@string/sign_up"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/tvForgotPassword"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_margin="16dp"
+                android:background="@drawable/background_white_button"
+                android:text="@string/forgot_password"
+                android:textColor="@color/colorPrimary" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
